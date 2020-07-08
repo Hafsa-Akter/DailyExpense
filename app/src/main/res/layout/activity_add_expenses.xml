@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddExpensesActivity">
+    <Spinner
+        android:id="@+id/expenseTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/expense_arrays"
+        android:prompt="@string/expenseType"
+        android:padding="20sp"
+        android:spinnerMode="dialog"
+
+        />
+
+    <EditText
+        android:id="@+id/amountET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Enter Amount"
+        android:inputType="number"
+        android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+        android:padding="20sp" />
+
+    <EditText
+        android:id="@+id/dateET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_date_range_black_24dp"
+        android:hint="  Select Date"
+        android:focusableInTouchMode="false"
+        android:padding="20sp" />
+
+    <EditText
+        android:id="@+id/timeET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_access_time_black_24dp"
+        android:hint="  Select Time"
+        android:focusableInTouchMode="false"
+        android:padding="20sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <Button
+                android:id="@+id/cameraBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Document (Camera)"
+                android:textAllCaps="false"
+                android:textColor="#376f91"
+                android:onClick="OpenCamera"/>
+
+            <Button
+                android:id="@+id/galleryBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Document (Gallery)"
+                android:textAllCaps="false"
+                android:textColor="#376f91"
+                android:onClick="OpenGallery"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5">
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="match_parent"
+                android:layout_height="90sp"
+                android:src="@drawable/noimageavailable"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp">
+
+        <Button
+            android:id="@+id/clearBtn"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100sp"
+            android:background="@drawable/clear_button"
+            android:text="Clear"
+            android:textColor="#376f91" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:background="@drawable/radius_button"
+            android:text="Save"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</LinearLayout>

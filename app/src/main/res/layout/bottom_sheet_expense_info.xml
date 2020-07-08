@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="56dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Expense Details"
+        android:textColor="#376f91"
+        android:padding="15sp"
+        android:gravity="center"/>
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginTop="5sp"-->
+        <!--android:background="#376f91"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            android:text="Expense  Type"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:textSize="20sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/expenseTypeBtnSheet"
+            android:hint="Expense Type"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Total  Amount"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:textSize="20sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/expenseAmtBtnSheet"
+            android:hint="Total Amount"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            android:text="Expense Date"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:textSize="20sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/expenseDateBtnSheet"
+            android:hint="Expense  Type"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            android:text="Expense  Time"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:textSize="20sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/expenseTimeBtnSheet"
+            android:hint="Expense Type"/>
+    </LinearLayout>
+</LinearLayout>

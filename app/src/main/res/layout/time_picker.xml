@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Time"
+        android:id="@+id/timePickerTV"
+        android:gravity="center"
+        android:textColor="#376f91"
+        android:textSize="20sp"
+        android:layout_marginTop="10sp"
+        />
+
+    <TimePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timePickerTP"
+        android:timePickerMode="spinner"
+        >
+
+    </TimePicker>
+
+    <Button
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/timePickerBtn"
+        android:background="@drawable/radius_button"
+        android:layout_marginBottom="15sp"
+        />
+
+</LinearLayout>
